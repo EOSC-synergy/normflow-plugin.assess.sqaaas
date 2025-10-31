@@ -1,0 +1,78 @@
+config:
+  credentials: []
+  project_repos:
+    github.com/EOSC-synergy/sqaaas-tooling:
+      branch: main
+      repo: https://github.com/EOSC-synergy/sqaaas-tooling
+    github.com/interTwin-eu/normflow-plugin:
+      branch: main
+      repo: https://github.com/interTwin-eu/normflow-plugin
+environment:
+  JPL_DOCKERFORCEBUILD: enabled
+  JPL_KEEPGOING: enabled
+sqa_criteria:
+  QC.Acc:
+    repos:
+      github.com/interTwin-eu/normflow-plugin git:
+        commands:
+        - /usr/bin/env sh .sqa/script.woolly-jade-capybara.sh
+        container: qc.acc_homely-mauve-rottweiler
+  QC.Doc:
+    repos:
+      github.com/interTwin-eu/normflow-plugin find_doc_files.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.gummy-magnolia-audemer.sh
+        container: qc.doc_muggy-asparagus-cat
+      github.com/interTwin-eu/normflow-plugin git:
+        commands:
+        - /usr/bin/env sh .sqa/script.dorky-chartreuse-warthog.sh
+        container: qc.doc_zippy-puce-starfish
+      github.com/interTwin-eu/normflow-plugin markdownlint:
+        commands:
+        - /usr/bin/env sh .sqa/script.beady-peach-wolf.sh
+        container: qc.doc_lousy-sepia-malamute
+  QC.Lic:
+    repos:
+      github.com/interTwin-eu/normflow-plugin licensee:
+        commands:
+        - /usr/bin/env sh .sqa/script.sunny-fuchsia-hyrax.sh
+        container: qc.lic_shaky-aqua-butterfly
+  QC.Met:
+    repos:
+      github.com/interTwin-eu/normflow-plugin cff-converter-python:
+        commands:
+        - /usr/bin/env sh .sqa/script.cloudy-magnolia-axolotl.sh
+        container: qc.met_lanky-pear-squirrel
+  QC.Sec:
+    repos:
+      github.com/interTwin-eu/normflow-plugin bandit:
+        commands:
+        - /usr/bin/env sh .sqa/script.craggy-charcoal-fox.sh
+        container: qc.sec_scummy-turquoise-owl
+  QC.Sty:
+    repos:
+      github.com/interTwin-eu/normflow-plugin flake8:
+        commands:
+        - /usr/bin/env sh .sqa/script.bumpy-eggplant-barnacle.sh
+        container: qc.sty_pasty-jade-dalmatian
+      github.com/interTwin-eu/normflow-plugin hadolint:
+        commands:
+        - /usr/bin/env sh .sqa/script.ugly-puce-wolfhound.sh
+        container: qc.sty_muzzy-saffron-seahorse
+      github.com/interTwin-eu/normflow-plugin jsonlint:
+        commands:
+        - /usr/bin/env sh .sqa/script.chewy-cerulean-dragon.sh
+        container: qc.sty_wheezy-teal-barnacle
+  QC.Uni:
+    repos:
+      github.com/interTwin-eu/normflow-plugin pytest:
+        commands:
+        - /usr/bin/env sh .sqa/script.scaly-gold-otter.sh
+        container: qc.uni_silly-ultramarine-beetle
+  QC.Ver:
+    repos:
+      github.com/interTwin-eu/normflow-plugin get_git_tags.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.thirsty-orchid-serval.sh
+        container: qc.ver_flabby-eggplant-discus
+timeout: 5400
