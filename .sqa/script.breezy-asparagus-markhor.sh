@@ -5,5 +5,8 @@
 
 (
 cd github.com/interTwin-eu/normflow-plugin &&
-    pytest  --json-report  --json-report-indent 4
+    python -m venv .venv &&&&
+    source .venv/bin/activate &&&&
+    .venv/bin/pip install . &&&&
+    .venv/bin/pytest -v tests/
 )
