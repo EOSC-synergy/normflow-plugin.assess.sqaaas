@@ -5,7 +5,7 @@ config:
       branch: feature/Ophidia
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
     github.com/interTwin-eu/normflow-plugin:
-      branch: main
+      branch: v0.0.2
       repo: https://github.com/interTwin-eu/normflow-plugin
 environment:
   JPL_DOCKERFORCEBUILD: enabled
@@ -15,64 +15,64 @@ sqa_criteria:
     repos:
       github.com/interTwin-eu/normflow-plugin git:
         commands:
-        - /usr/bin/env sh .sqa/script.scummy-platinum-mole.sh
-        container: qc.acc_leaky-purple-shrimp
+        - /usr/bin/env sh .sqa/script.wimpy-tan-blue.sh
+        container: qc.acc_trippy-rose-penguin
   QC.Doc:
     repos:
       github.com/interTwin-eu/normflow-plugin find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.silly-peach-buzzard.sh
-        container: qc.doc_paltry-puce-neanderthal
+        - /usr/bin/env sh .sqa/script.scanty-puce-impala.sh
+        container: qc.doc_flabby-cerise-duck
       github.com/interTwin-eu/normflow-plugin git:
         commands:
-        - /usr/bin/env sh .sqa/script.flabby-chocolate-mongrel.sh
-        container: qc.doc_crappy-malachite-nightingale
+        - /usr/bin/env sh .sqa/script.gamy-amaranth-ant.sh
+        container: qc.doc_woozy-coral-rhinoceros
       github.com/interTwin-eu/normflow-plugin markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.scaly-harlequin-squid.sh
-        container: qc.doc_tacky-cinnabar-barracuda
+        - /usr/bin/env sh .sqa/script.lanky-razzmatazz-audemer.sh
+        container: qc.doc_lumpy-pink-jackal
   QC.Lic:
     repos:
       github.com/interTwin-eu/normflow-plugin licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.leaky-cinnamon-jaguar.sh
-        container: qc.lic_breezy-amber-hare
+        - /usr/bin/env sh .sqa/script.stealthy-ruby-chin.sh
+        container: qc.lic_sunny-buff-leopard
   QC.Met:
     repos:
       github.com/interTwin-eu/normflow-plugin cff-converter-python:
         commands:
-        - /usr/bin/env sh .sqa/script.nippy-dandelion-corgi.sh
-        container: qc.met_squeaky-goldenrod-molly
+        - /usr/bin/env sh .sqa/script.homely-ivory-gecko.sh
+        container: qc.met_cozy-cinnamon-warthog
   QC.Sec:
     repos:
       github.com/interTwin-eu/normflow-plugin bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.thirsty-bistre-hippopotamus.sh
-        container: qc.sec_sickly-celadon-coral
+        - /usr/bin/env sh .sqa/script.whiny-charcoal-beetle.sh
+        container: qc.sec_greasy-champagne-paradise
   QC.Sty:
     repos:
       github.com/interTwin-eu/normflow-plugin flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.droopy-magenta-binturong.sh
-        container: qc.sty_woozy-green-booby
+        - /usr/bin/env sh .sqa/script.flaky-beige-wildebeest.sh
+        container: qc.sty_skimpy-chocolate-dhole
       github.com/interTwin-eu/normflow-plugin hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.seedy-heliotrope-shark.sh
-        container: qc.sty_squeaky-aqua-rat
+        - /usr/bin/env sh .sqa/script.sleazy-gold-akita.sh
+        container: qc.sty_sleazy-wheat-bordeaux
       github.com/interTwin-eu/normflow-plugin jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.queasy-persimmon-mandrill.sh
-        container: qc.sty_randy-mustard-dog
+        - /usr/bin/env sh .sqa/script.skanky-silver-akbash.sh
+        container: qc.sty_homely-alizarin-macaque
   QC.Uni:
     repos:
       github.com/interTwin-eu/normflow-plugin commands:
         commands:
-        - /usr/bin/env sh .sqa/script.beady-magnolia-owl.sh
-        container: qc.uni_baggy-emerald-hippopotamus
+        - /usr/bin/env sh .sqa/script.breezy-apricot-quail.sh
+        container: qc.uni_lanky-harlequin-vole
   QC.Ver:
     repos:
       github.com/interTwin-eu/normflow-plugin get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.slaphappy-olivine-beetle.sh
-        container: qc.ver_craggy-lavender-quail
+        - /usr/bin/env sh .sqa/script.snoopy-rust-goose.sh
+        container: qc.ver_gloppy-flax-cuttlefish
 timeout: 5400
