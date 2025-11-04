@@ -15,64 +15,64 @@ sqa_criteria:
     repos:
       github.com/interTwin-eu/normflow-plugin git:
         commands:
-        - /usr/bin/env sh .sqa/script.scummy-platinum-mole.sh
-        container: qc.acc_leaky-purple-shrimp
+        - /usr/bin/env sh .sqa/script.queasy-tomato-drever.sh
+        container: qc.acc_jumpy-periwinkle-skunk
   QC.Doc:
     repos:
       github.com/interTwin-eu/normflow-plugin find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.silly-peach-buzzard.sh
-        container: qc.doc_paltry-puce-neanderthal
+        - /usr/bin/env sh .sqa/script.lumpy-scarlet-hound.sh
+        container: qc.doc_stealthy-red-tarsier
       github.com/interTwin-eu/normflow-plugin git:
         commands:
-        - /usr/bin/env sh .sqa/script.flabby-chocolate-mongrel.sh
-        container: qc.doc_crappy-malachite-nightingale
+        - /usr/bin/env sh .sqa/script.sunny-lilac-dodo.sh
+        container: qc.doc_queasy-magnolia-dunker
       github.com/interTwin-eu/normflow-plugin markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.scaly-harlequin-squid.sh
-        container: qc.doc_tacky-cinnabar-barracuda
+        - /usr/bin/env sh .sqa/script.leaky-saffron-centipede.sh
+        container: qc.doc_snappy-emerald-squirrel
   QC.Lic:
     repos:
       github.com/interTwin-eu/normflow-plugin licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.leaky-cinnamon-jaguar.sh
-        container: qc.lic_breezy-amber-hare
+        - /usr/bin/env sh .sqa/script.stinky-chartreuse-barb.sh
+        container: qc.lic_shabby-mauve-gorilla
   QC.Met:
     repos:
       github.com/interTwin-eu/normflow-plugin cff-converter-python:
         commands:
-        - /usr/bin/env sh .sqa/script.nippy-dandelion-corgi.sh
-        container: qc.met_squeaky-goldenrod-molly
+        - /usr/bin/env sh .sqa/script.craggy-cornflower-bullfrog.sh
+        container: qc.met_boozy-pink-beetle
   QC.Sec:
     repos:
       github.com/interTwin-eu/normflow-plugin bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.thirsty-bistre-hippopotamus.sh
-        container: qc.sec_sickly-celadon-coral
+        - /usr/bin/env sh .sqa/script.sleazy-russet-lemming.sh
+        container: qc.sec_squirrely-sepia-barnacle
   QC.Sty:
     repos:
       github.com/interTwin-eu/normflow-plugin flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.droopy-magenta-binturong.sh
-        container: qc.sty_woozy-green-booby
+        - /usr/bin/env sh .sqa/script.woolly-teal-pig.sh
+        container: qc.sty_snappy-cyan-binturong
       github.com/interTwin-eu/normflow-plugin hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.seedy-heliotrope-shark.sh
-        container: qc.sty_squeaky-aqua-rat
+        - /usr/bin/env sh .sqa/script.shabby-amethyst-dalmatian.sh
+        container: qc.sty_tasty-lime-rottweiler
       github.com/interTwin-eu/normflow-plugin jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.queasy-persimmon-mandrill.sh
-        container: qc.sty_randy-mustard-dog
+        - /usr/bin/env sh .sqa/script.wimpy-jade-spoonbill.sh
+        container: qc.sty_greasy-cyan-hare
   QC.Uni:
     repos:
       github.com/interTwin-eu/normflow-plugin commands:
         commands:
-        - /usr/bin/env sh .sqa/script.beady-magnolia-owl.sh
-        container: qc.uni_baggy-emerald-hippopotamus
+        - /usr/bin/env sh .sqa/script.gimpy-white-tuatara.sh
+        container: qc.uni_pasty-orange-javanese
   QC.Ver:
     repos:
       github.com/interTwin-eu/normflow-plugin get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.slaphappy-olivine-beetle.sh
-        container: qc.ver_craggy-lavender-quail
+        - /usr/bin/env sh .sqa/script.paltry-violet-crab.sh
+        container: qc.ver_muzzy-celadon-swan
 timeout: 5400
